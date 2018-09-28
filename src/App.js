@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { CssBaseline, AppBar, Toolbar, Typography, Grid, Paper } from "@material-ui/core";
+import MyVideo from './MyVideo';
 
 class App extends Component {
   render() {
@@ -12,15 +13,15 @@ class App extends Component {
         </Typography>
         </Toolbar>
       </AppBar>
-      <Grid container spacing={24}>
+      <Grid container style={{marginTop:100}} spacing={24}>
         <Grid item md={6} xs={12}>
-          <Paper>
-            <img src alt={"First"} style={{ width: '100 %' }} />
+          <Paper style={{ width: '150px' }}>
+            <MyVideo />
           </Paper>
         </Grid>
         <Grid item md={6} xs={12}>
           <Paper>
-            <img src alt={"second"} style={{ width: '100 %' }} />
+            {/* <img src alt={"second"} style={{ width: '100 %' }} /> */}
           </Paper>
         </Grid>
       </Grid>
